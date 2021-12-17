@@ -1,0 +1,7 @@
+*.csv
+*.parquet
+*.pkl
+venv/
+data/dataset.db
+*.db
+node_modules/

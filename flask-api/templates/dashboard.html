@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Twitter Data Analysis</title>
+
+    <style>
+        h1 {text-align: center;}
+        /* p {text-align: center;}
+        div {text-align: center;} */
+    </style>
+</head>
+<body>
+    <h1>Dashboard - Twitter Data Analysis</h1>
+    <h2>Sentiment in the dataset</h2>
+    <img src="/static/histogram_sentiment.png" alt="sentiment_score_histogram">
+
+
+    <h2>-----Classification Model comparison---------</h2>
+    <h3>Execution Time</h3>
+    <img src="/static/time.jpeg" alt="nb_eval">
+
+    <h3>Accuracy</h3>
+    <img src="/static/eval.jpeg" alt="lr_eval">
+
+
+    <h2>-----Data Read Comparison---------</h2>
+    <h3>Read Time Comparison - SQL vs Parquet</h3>
+    <img src="/static/load_sql_parquet.jpg" alt="load_sql_parquet">
+
+    <h3>Read Time Comparison- SQL vs CSV</h3>
+    <img src="/static/load_sql_csv.jpg" alt="load_sql_csv">
+
+    
+</body>
+</html>

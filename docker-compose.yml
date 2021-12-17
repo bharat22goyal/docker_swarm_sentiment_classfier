@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  collect-data:
+        image: 127.0.0.1:5000/collect-data
+        build:
+          context: .
+          dockerfile: Dockerfile.collect
+        volumes:
+          - ./:/app
+
+  convert-data:
+        image: 127.0.0.1:5000/convert-data
+        build:
+          context: .
+          dockerfile: Dockerfile.convert
+        volumes:
+          - ./:/app
+  
+  train:
+        image: 127.0.0.1:5000/train
+        build:
+          context: .
+          dockerfile: Dockerfile.machine
+        volumes:
+          - ./:/app
+          
+  api:
+        image: 127.0.0.1:5000/api
+        build: 
+          context: .
+          dockerfile: Dockerfile.api
+        ports:
+            - "8080:6000"
+        volumes:
+          - ./flask-api/:/app
+        
+    
