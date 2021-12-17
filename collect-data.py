@@ -6,10 +6,10 @@ import time
 import json
 import os.path
 
-ckey="GMzj55F7nJxwvlQuF51r1S76t"
-csecret="gKEPtkTmExpJWbnhODGua5TPG9DwrZ5yNTI2v7hzJN4ejB1YyH"
-atoken='1453368030751297537-fnRPHF1TBnthvNX5Crbxd4zWYQWNg6'
-asecret='N1rZ4xAUBlvOPjdp4fAW4XsTv4Sd3VF6Ht30b9dz9rhJd'
+ckey=""
+csecret=""
+atoken=''
+asecret=''
 
 path='data/dataset.db'
 if os.path.isfile(path):
